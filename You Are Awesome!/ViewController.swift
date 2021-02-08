@@ -25,9 +25,10 @@ class ViewController: UIViewController {
                         "You Are Fantastic!",
                         "When the Genius Bar Needs Help, They Call You!",
                         "Fabulus? That's You!",
-                        "You've Got The Design Skills of Jony Ive!"]
+                        "You've Got The Design Skills of Jony Ive"]
         messageLabel.text = messages[Int.random(in: 0...messages.count-1)]
         imageView.image = UIImage(named: "image\(Int.random(in: 0...totalNumberOfImages))")
+        
 //        messageLabel.text = messages[messageNumber]
 //        messageNumber += 1
 //        if messageNumber == messages.count {
