@@ -63,14 +63,11 @@ class ViewController: UIViewController {
         if playSoundSwitch.isOn {
             playSound(name: "sound\(soundNumber)") // then play the sound
         }
-       
     }
     @IBAction func playSoundSwitch(_ sender: UISwitch) {
         if !sender.isOn && audioPlayer != nil { // if the .isOn is NOT true AND audioPlayer is NOT nil
             audioPlayer.stop() // stop playing
-            
         }
     }
-    
 }
 
